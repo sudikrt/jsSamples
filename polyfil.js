@@ -17,7 +17,7 @@ printMyName ();
 Function.prototype.myBind = function (...args) {
     let obj = this;
     return function () {
-        obj.call ();
+        obj.call (args[0]);
     }
 }
 
