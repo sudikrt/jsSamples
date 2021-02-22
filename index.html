@@ -2,6 +2,16 @@
 <html>
     <head>
         <title>JS Demos</title>
+        <style>
+            .event-demo div{
+                margin : 10px;
+                padding : 2rem;
+                min-width : 100px;
+                min-height : 100px;
+                border : 1px solid red;
+            }
+        </style>
+        
         <script src="debouncing.js"/>
         <script src="funct_curry_closur.js"/>
         <script src="funct_curry.js"/>
@@ -9,6 +19,7 @@
         <script src="polyfil.js"/>
         <script src="index1.js"/>
         <script src="index.js"/>
+
     </head>
     <body>
         <center>
@@ -17,5 +28,37 @@
         <div>
             <input type="text" onkeyup="betterFunc ();">
         </div>
+
+        <!--Event delegation starts -->
+        <div>
+            <ul id="category">
+                <li id="laptop">laptop</li>
+                <li id="camera">Camera</li>
+                <li id="shoes">Shoes</li>
+            </ul>
+        </div>
+        <div id="form">
+            <input id="name" type="text" data-uppercase/>
+            <input id="pan" type="text"/>
+            <input id="email" type="text"/>
+        </div>
+        <!--Event delegation ends -->
+        <div class="event-demo">
+            <div id="grand-parent">
+                <div id="parent">
+                    <div id="child">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="eventhandler.js"></script>
+
+        <script src="corsexample.js"></script>
+        <script src="sumofN.js"></script>
+        <script src="prototypeExample.js"></script>
+        <!--Event delegation starts -->
+        <script src="eventDeligation.js"></script>
+        <!--Event delegation ends -->
     </body>
 </html>
