@@ -12,3 +12,4 @@ localStorage.setItem ("Hello","world");
 localStorage.getItem ("Hello");
 localStorage.removeItem ('HelloOne');
 localStorage.clear (); // clears everything
+localStorage.setItem ("user",JSON.stringify ({name : 'Ram'}));
